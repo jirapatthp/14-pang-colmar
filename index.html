@@ -73,8 +73,8 @@
         </div>
       </section>
 
-      <section class="information flex flex-col md:flex-row md:px-6 md:py-8">
-        <div class="hidden md:block md:w-3/5">
+      <section class="information flex flex-col md:flex-row">
+        <div class="hidden md:block md:w-3/5 py-8 px-6">
           <img src="./images/information-main.jpg" alt="information-main" />
           <h2 class="text-2xl font-bold pt-8 border border-red-600">
             It doesn't hurt to keep practicing
@@ -90,75 +90,177 @@
           >
         </div>
 
-        <div class="px-4 md:px-6 border border-green-500 md:w-2/5 ">
+        <div
+          class="p-4 md:pt-4 flex flex-col gap-16 md:gap-0 md:p-0 border border-green-500 md:w-2/5"
+        >
           <div
-            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200"
+            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200 md:p-4"
           >
-            <img
-              src="./images/information-orientation-mobile.jpg"
-              alt="information-orientation-mobile"
-              class="md:hidden pt-4"
-            />
-            <img
-              src="./images/information-orientation.jpg"
-              alt="information-orientation"
-              class="hidden md:block h-auto md:w-[35%] ps-4"
-            />
+            <div class="md:w-[35%]">
+              <img
+                src="./images/information-orientation-mobile.jpg"
+                alt="information-orientation-mobile"
+                class="md:hidden"
+              />
+              <img
+                src="./images/information-orientation.jpg"
+                alt="information-orientation"
+                class="hidden md:block"
+              />
+            </div>
 
-            <div class="flex flex-col gap-2 pt-2 border border-blue-500">
-              <h2 class="ps-4">Orientation date</h2>
-              <p class="ps-4">Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#" class="text-blue-400 ">Read more</a>
+            <div
+              class="flex flex-col gap-2 md:ml-4 border border-blue-500 md:w-[65%] p-4 md:p-0"
+            >
+              <h2 class="font-semibold">Orientation date</h2>
+              <p class="text-sm">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#" class="text-blue-400">Read more</a>
             </div>
           </div>
 
           <div
-            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200"
+            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200 md:p-4"
           >
-            <img
-              src="./images/information-campus-mobile.jpg"
-              alt="information-campus-mobile"
-              class="md:hidden pt-4"
-            />
-            <img
-              src="./images/information-campus.jpg"
-              alt="information-campus"
-              class="hidden md:block h-auto md:w-[35%] ps-4"
-            />
+            <div class="md:w-[35%]">
+              <img
+                src="./images/information-campus-mobile.jpg"
+                alt="information-campus-mobile"
+                class="md:hidden"
+              />
+              <img
+                src="./images/information-campus.jpg"
+                alt="information-campus"
+                class="hidden md:block"
+              />
+            </div>
 
-            <div class="flex flex-col gap-2 pt-2">
-              <h2 class="ps-4">Our campus</h2>
-              <p class="ps-4">Find which campus is close by you</p>
-              <a href="#" class="text-blue-400 ">Read more</a>
+            <div
+              class="flex flex-col gap-2 md:ml-4 border border-blue-500 md:w-[65%] p-4 md:p-0"
+            >
+              <h2 class="font-semibold">Our campus</h2>
+              <p class="text-sm">Find which campus is close by you</p>
+              <a href="#" class="text-blue-400">Read more</a>
             </div>
           </div>
 
           <div
-            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200"
+            class="flex flex-col md:flex-row md:items-center border border-purple-500 hover:bg-slate-200 md:p-4"
           >
-            <img
-              src="./images/information-guest-lecture-mobile.jpg"
-              alt="information-guest-lecture-mobile"
-              class="md:hidden pt-4"
-            />
-            <img
-              src="./images/information-guest-lecture.jpg"
-              alt="information-guest-lecture"
-              class="hidden md:block h-auto md:w-[35%] ps-4"
-            />
+            <div class="md:w-[35%]">
+              <img
+                src="./images/information-guest-lecture-mobile.jpg"
+                alt="information-guest-lecture-mobile"
+                class="md:hidden"
+              />
+              <img
+                src="./images/information-guest-lecture.jpg"
+                alt="information-guest-lecture"
+                class="hidden md:block"
+              />
+            </div>
 
-            <div class="flex flex-col gap-2 pt-2">
-              <h2 class="ps-4">Special guest lecture</h2>
-              <p class="ps-4">
+            <div
+              class="flex flex-col gap-2 md:ml-4 border border-blue-500 md:w-[65%] p-4 md:p-0"
+            >
+              <h2 class="hidden md:block font-semibold">Our guest lecture</h2>
+              <h2 class="md:hidden font-semibold">Special guest lecture</h2>
+              <p class="text-sm">
                 Join a keynote with Oliver Sack about music in medical treatment
               </p>
-              <a href="#" class="text-blue-400 ">Read more</a>
+              <a href="#" class="text-blue-400">Read more</a>
             </div>
           </div>
         </div>
       </section>
+
       <section class="course">
-        <div></div>
+        <div
+          class="border border-blue-500 text-center font-extrabold text-2xl pt-8"
+        >
+          <h2>Start Learning</h2>
+        </div>
+
+        <div class="hidden md:block md:grid grid-cols-3 gap-8 px-[72px] py-8">
+          <div class="border border-red-500">
+            <img src="./images/course-software.jpg" alt="course-software" />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Software engineering</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                Web development, Mobile development,iOT,APls
+              </p>
+            </div>
+          </div>
+
+          <div class="border border-red-500">
+            <img
+              src="./images/course-computer-art.jpg"
+              alt="course-computer-art"
+            />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Computer art</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                Computer Animation
+              </p>
+            </div>
+          </div>
+
+          <div class="border border-red-500">
+            <img src="./images/course-design.jpg" alt="course-design" />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Design</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                User Experience Design, User Research, Visual Design
+              </p>
+            </div>
+          </div>
+          <div class="border border-red-500">
+            <img src="./images/course-data.jpg" alt="course-data" />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Data</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                Data Science, Big Data, SQL, Data Visualization
+              </p>
+            </div>
+          </div>
+
+          <div class="border border-red-500">
+            <img src="./images/course-business.jpg" alt="course-business" />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Business</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                Product Development, Business Development, Startup
+              </p>
+            </div>
+          </div>
+
+          <div class="border border-red-500">
+            <img src="./images/course-marketing.jpg" alt="course-marketing" />
+            <div class="p-4 pb-6 flex flex-col gap-2">
+              <p class="text-xl font-semibold">Marketing</p>
+              <p class="font-thin">courses</p>
+              <p class="font-thin">
+                Analytics, Content Marketing, Mobile Marketing
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:hidden p-4 pb-8">
+          <div class="flex flex-col gap-2 border border-red-500">
+            <p class="p-4 pb-6 bg-slate-200">Software engineering</p>
+            <p class="p-4 pb-6 bg-slate-200">Computer art</p>
+            <p class="p-4 pb-6 bg-slate-200">Design</p>
+            <p class="p-4 pb-6 bg-slate-200">Data</p>
+            <p class="p-4 pb-6 bg-slate-200">Business</p>
+            <p class="p-4 pb-6 bg-slate-200">Marketing</p>
+          </div>
+        </div>
       </section>
       <section class="thesis">
         <div></div>
