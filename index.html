@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Colmar Academy</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<style type="text/tailwindcss">
-			@theme {
-				--font-sans: "Poppins", sans-serif;
-				--font-inter: "Inter", sans-serif;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colmar Academy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Poppins", sans-serif;
+        --font-inter: "Inter", sans-serif;
 
-				--color-mint-200: oklch(0.92 0.18 145);
-				--color-mint-400: oklch(0.78 0.25 145);
-				--color-mint-700: oklch(0.56 0.32 145);
-			}
-		</style>
-	</head>
+        --color-mint-200: oklch(0.92 0.18 145);
+        --color-mint-400: oklch(0.78 0.25 145);
+        --color-mint-700: oklch(0.56 0.32 145);
+      }
+    </style>
+  </head>
 
-	<body class="w-screen min-h-dvh">
-		<header>
-			<!-- nav mobile -->
-			<nav class="flex justify-between md:hidden">
-				<img src="./images/ic-logo.svg" alt="ic-logo">
-				<img src="./images/ic-on-campus.svg" alt="ic-on-campus">
-				<img src="./images/ic-online.svg" alt="ic-online">
-				<img src="./images/ic-login.svg" alt="ic-login">
-			</nav>
+  <body class="w-screen min-h-dvh">
+    <header >
+      <!-- nav mobile -->
+      <nav class="flex justify-between md:hidden p-4 h-16 items-center">
+        <img src="./images/ic-logo.svg" alt="ic-logo" />
+        <img src="./images/ic-on-campus.svg" alt="ic-on-campus" />
+        <img src="./images/ic-online.svg" alt="ic-online" />
+        <img src="./images/ic-login.svg" alt="ic-login" />
+      </nav>
+      <!-- nav desktop -->
+      <nav class="hidden md:flex justify-between px-6 h-16 items-center">
+        <div class="flex h-8 text-center">
+          <img src="./images/ic-logo.svg" alt="ic-logo" />
+          <p>
+            <span class="text-gray-800">COLMAR</span
+            ><span class="text-gray-400">ACADEMY</span>
+          </p>
+        </div>
 
-			<nav class="flex justify-between ">
-				<img src="./images/ic-logo.svg" alt="ic-logo">
-				<a href="http://"></a>
-			</nav>
-		</header>
-	</body>
+        <div class="h-8 gap-4">
+          <a href="#">On campus</a>
+          <a href="#">Online</a>
+          <a href="#">or companies</a>
+          <a href="#">Sign in</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero flex flex-col md:flex-row  bg-slate-200">
+        <div class="md:w-3/5 md:p-6">
+			<img src="./images/banner.jpg" alt="banner">
+		</div>
+        <div class=" px-4 py-8 md:flex flex-col  md:px-6 w-fit justify-center">
+			<h2 class="border border-red-600 text-3xl font-extrabold ">Learn something<br>new everyday</h2>
+			<p class=" border border-red-600 pt-8 ">Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.</p>
+			<button class="mt-6  border border-red-600 hover:bg-slate-700 text-blue-50 bg-slate-400 pt-2 pb-2 w-full text-center ">Start here</button>
+		</div>
+      </section>
+      <section class="information">
+        <div></div>
+      </section>
+      <section class="course">
+        <div></div>
+      </section>
+      <section class="thesis">
+        <div></div>
+      </section>
+    </main>
+    <footer>
+      <div></div>
+    </footer>
+  </body>
 </html>
